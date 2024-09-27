@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+
+    <title>Ice Cream</title>
+    <style>
+        html {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        span {
+            color: rgb(243, 155, 169);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid text-white bg-dark" id="Top">
+
+        <nav class="nav justify-content-center text-white">
+            <a class="nav-link text-white" href="#">Ice Cream</a>
+            <a class="nav-link text-white" href="#">Sales Data</a>
+            <a class="nav-link text-white" href="#">Pictures</a>
+            <a class="nav-link text-white" href="#">Stories & Text</a>
+            <a class="nav-link text-white" href="#">Summary</a>
+        </nav>
+    </div>
+    <div class="container-fluid bg-info-subtle">
+        <header class="col-sm-8 mx-auto text-center py-4">
+            <h1>World of Ice Cream</h1>
+            Ice cream's popularity lies in its creamy texture, refreshing taste, and diverse flavours, making it a
+            beloved dessert for all occations, fostering social connections and nostalgic memmories.
+        </header>
+
+    </div>
+
+    <div class="container">
+        <div id="newCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="pic1.jpg" alt="Ice Cream" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ice Cream and Flowers</h5>
+                        <p>A perfect combination</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="pic8.jpg" alt="Who loves waffle" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Who Loves Waffle?</h5>
+                        <p>Waffle cones are just as yummy as the ice cream!</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="pic9.jpg" alt="Monkey Business" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Monkey Business</h5>
+                        <p>It isn't only humans love ice cream!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <!-- Left and right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#newCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2>Introduction</h2>
+        <p>This is the simple page that shows a number of bootstrap components and the styles they provide to
+            enhance
+            plain
+            HTML content - while also supporting a <i>responsive</i> display (screen resizing).</p>
+        <p>Firstly, at the top of the page, within a <span>&lt;header&gt;...&lt;/header&gt;</span> section, it is
+            common
+            to have the <strong>navigation</strong> and some form of <strong>banner / heading</strong> content. Here
+            we
+            have a list
+            using the Bootstrap <span>&lt;nav&gt;...&lt;/nav&gt;</span> component in a
+            container with five links to different parts of the webpage, with a blue blue (<span>bg-info</span>)
+            background.
+            While a second <span>container-fluid</span> with a light blue (<span>bg-info-subtle</span>) holds the
+            <strong>banner</strong> detailsin a
+            centred column of width 8 (<span>col-sm-8 mx-auto text-center py-4</span>)
+            and comprising a title of the page and leading sentence.
+        </p>
+        <p>Next is the <span>&lt;body&gt;...&lt;/body&gt;</span> section that holds the <strong>content</strong> of
+            the
+            page. The content includes the following sections: <strong>Introduction</strong> (this);<strong>Ice
+                Cream
+                Sales</strong>; <strong>Ice Cream Pictures</strong>; and a <strong>Summary</strong>. The table
+            content
+            is
+            formatted, while the picture and stories of ice creams applies differering <i>responsive</i> layouts.
+        </p>
+        <p>The final section is a <span>&lt;footer&gt;...&lt;/footer&gt;</span>.</p>
+        <p>Note that each section has a <i>hyperlink</i> to the <span>Top</span> of the document for navigation.</p>
+
+        <p class="text-end"><a href="index.html#Top">Top</a></p>
+        <h2>
+            Ice Cream Sales Data
+        </h2>
+        <p>In this section of the page, we have a nice table with some data from the 2024 Ice Cream Sales in
+            Australia.
+            Here
+            the table is styled with the bootstrap classes <span>table table-striped table-hover</span>, and the
+            <span>table-success</span> applied to the table <span>thread</span>. Note the table also includes a
+            caption and is constrained to 8 columns on wider screens and all 12 columns on small screens (i.e.
+            <span>col-md-9 col-12 mx-auto</span>).
+        </p>
+        <table table class="table table-striped-columns table-hover col-md-9 col-12 mx-auto">
+            <thead class="table-success  bg-info-subtle">
+                <tr>
+                    <th> </th>
+                    <th> NSW </th>
+                    <th> VIC </th>
+                    <th> QLD </th>
+                    <th> WA </th>
+                    <th> SA </th>
+                    <th> TAS </th>
+                    <th> ACT </th>
+                    <th> NT </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th> Icecream Sales ($M) </th>
+                    <td> 32.6 </td>
+                    <td> 23.6 </td>
+                    <td> 28.7 </td>
+                    <td> 19.2 </td>
+                    <td> 15.6 </td>
+                    <td> 10.6 </td>
+                    <td> 7.7 </td>
+                    <td> 9.7 </td>
+                </tr>
+                <tr>
+                    <th> Profit ($M) </th>
+                    <td> 3.6 </td>
+                    <td> 2.6 </td>
+                    <td> 8.7 </td>
+                    <td> 9.2 </td>
+                    <td> 1.6 </td>
+                    <td> 0.6 </td>
+                    <td> 1.7 </td>
+                    <td> 0.7 </td>
+                </tr>
+            </tbody>
+            <caption>Australian Icecream Sales by State (2024)</caption>
+        </table>
+
+        <p class="text-end"><a href="index.html#Top">Top</a></p>
+        <h2>
+            Ice Cream Pictures (Responsive Layout)
+        </h2>
+        <p>Below are some pretty pictures of ice cream, beautiful and freely-usable images downloaded from the website
+            <a href="https://unsplash.com">Unsplash</a>. These images are placed in a single bootstrap <span>row
+                g-1</span> (where the <i>g-1</i> adds a gutter size 1 between images) composed of columns using a
+            combined <span>col-sm-6 col-12</span>. The <i>col-sm-6</i> forces 2 images to be in a row on all screens
+            sizes
+            <strong>except</strong> very small ones (&lt;576px) where the <i>col-12</i> forces the images to use all 12
+            column grid units and stack each image on top of each other. Each image has the class <span>img-fluid</span>
+            applied to it, allowing it resize to the side of the column.
+        </p>
+        <div class="row g-1">
+            <div class="col-sm-6 col-12">
+                <img src="pic1.jpg" alt="Ice Cream" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-12">
+                <img src="pic2.jpg" alt="Ice Cream" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-12">
+                <img src="pic3.jpg" alt="Ice Cream" class="img-fluid">
+            </div>
+            <div class="col-sm-6 col-12">
+                <img src="pic4.jpg" alt="Ice Cream" class="img-fluid">
+            </div>
+        </div>
+
+
+
+        <p class="text-end"><a href="index.html#Top">Top</a></p>
+        <h2>Ice Cream Stories</h2>
+        <p>The following three <i>images and text</i> are each held within <span>div</span> block that the class
+            attributes <span>p-4 mb-4 bg-light rounded</span>, to set the padding, margin-below, background colour and
+            corner shape, respectively. Each <i>Image & Text</i> holds a <span>row</span>, with the image is assigned to
+            a <span>col-sm-8</span>; allowing it to span the remaining 8 column units. Added to each of these two
+            columns is the <span>col-12</span>, which says when the screen is smaller than 576px, it will then use all
+            12 column grids for each image and text, allowing them to be stacked on top of each other.
+        </p>
+        <div class="p-4 mb-4 bg-info-subtle rounded">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <img src="pic5.jpg" alt="Ice Cream" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="lead">Ice Creams at the Beach by <strong>Tim Stief</strong></p>
+                    <p class="small">Here, the class <span>img-fluid rounded</span> has been applied to the image. The
+                        title above uses <span>&lt;p class="lead"&gt;</span> to make the text standout. While this text
+                        uses the
+                        span>&lt;p class="small"&gt;</span> to distinguish it from the normal paragraphs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 mb-4 bg-info-subtle rounded">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <img src="pic6.jpg" alt="Ice Cream" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="lead">Ice Creams in a Carparkby <strong>Valerian Koo</strong></p>
+                    <p class="small">Another picture of a beautiful buterfly that has the class <span>img-fluid
+                            rounded-pill</span> applied to it.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 mb-4 bg-info-subtle rounded">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <img src="pic7.jpg" alt="Ice Cream" class="img-fluid rounded">
+                </div>
+                <div class="col-sm-8 col-12">
+                    <p class="lead">Ice Creams in Winter by <strong>Phillip Cordts</strong></p>
+                    <p class="small">Here, the class <span>img-fluid rounded-circle</span> has been applied to the
+                        image.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-end"><a href="index.html#Top">Top</a></p>
+        <h2>Summary</h2>
+        <p>This then concludes the content in the <span>main</span> section of the page. Note that the end of each
+            content block is a hyperlink back to the <strong>Top</strong> of the page. It uses the <span>&lt;p
+                class="text-end"&gt;</span> to align to the right of the screen.</p>
+        <p>The next and final section is the <span>footer</span> which uses <span>div</span> style with the class
+            <span>container-fluid p-2 bg-dark text-white</span> to align the paragraph text in centre of the container.
+        </p>
+    </div>
+
+
+    <div class="container-fluid p-2 bg-dark text-white">
+        <footer>
+            <p>&copy; 2024 A webpage footer with important info.</p>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -- ADDED TO END OF YOUR BODY SECTION -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
